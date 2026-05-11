@@ -1,7 +1,7 @@
 # Gliederung der Bachelorarbeit
 
 **Arbeitstitel:** Potenziale von Agent-Driven Software Engineering zur Realisierung von ETL-Systemen: Ein Kosten-Nutzen-Vergleich zwischen Eigenentwicklung und Standardsoftware  
-**Verfasser:** Marc Schubert  
+**Verfasser:** Marc Schubert   
 **Zielumfang:** ca. 40 Textseiten (± 10%)
 
 ---
