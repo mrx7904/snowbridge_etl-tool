@@ -46,12 +46,13 @@
 * **4.1 Architekturentwurf und Tech-Stack-Evaluation:**
     * Auswahl und Begründung: .NET 10, Python 3.10+, MariaDB.
     * Das Prozess-Isolations-Pattern: C# als „Command Center", Python als „Worker".
-* **4.2 Implementierung der Kernkomponenten:**
-    * Frontend: Generierung der Blazor Server UI, Dashboards und Komponenten.
-    * Backend: Entwicklung des `ConnectionService` und Konfigurationsmanagement (`appsettings.json`).
-    * Schnittstelle: Parameterübergabe, Prozesssteuerung und Log-Parsing (Tracebacks in UI).
+* **4.2 Implementierung der Kernkomponenten – ADSE-Entscheidungen im Fokus:**
+    * Frontend: Blazor Server UI – welche Komponenten wurden vollständig generiert, wo war manueller Eingriff nötig?
+    * Backend: `ConnectionService` und Konfigurationsmanagement – KI-gestützte Architekturentscheidungen und deren Bewertung.
+    * Schnittstelle: Parameterübergabe und Log-Parsing – Grenzerfahrungen bei komplexer Interop-Logik.
 * **4.3 Empirische Analyse der ADSE-Potenziale:**
-    * Produktivitätspotenziale: Schnelle Generierung von Boilerplate-Code, Architekturvorschläge, Dokumentation.
+    * Erhebungsmethodik: Zeiterfassung (Menschliche Arbeitszeit vs. KI-Interaktionszeit), Auswertung von Git-Commit-Häufigkeit und Prompt-Logs.
+    * Produktivitätspotenziale: Generierung von Boilerplate-Code, Architekturvorschläge, Dokumentation.
     * Qualitätspotenziale: Code-Review durch KI, konsistente Namensgebung, automatisierte Testfälle.
     * Identifizierte Grenzen: Debugging komplexer Interop-Fehler, Halluzinationen bei neuen Framework-Versionen (.NET 10).
 
@@ -67,6 +68,7 @@
     * Ermittlung des Break-Even-Points und Sensitivitätsanalyse.
 * **5.3 Qualitative Nutzenbewertung:**
     * Strategischer Nutzen: Datenschutz (Data Residency), Unabhängigkeit, individuelle Anpassbarkeit.
+    * Risikofaktoren der Eigenentwicklung: Personalrisiko und Bus-Factor bei Single-Developer-Projekten als versteckter OPEX-Faktor.
     * Implikationen für den Einsatz von ADSE in vergleichbaren ETL-Projekten.
 
 ## 6. Fazit und Ausblick (ca. 2–3 Seiten)
