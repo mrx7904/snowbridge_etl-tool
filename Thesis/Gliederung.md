@@ -40,7 +40,7 @@
     * Auswahl der Vergleichs-SaaS (z.B. Fivetran/Airbyte Standard Tier).
     * Modellierung der Lizenzkosten über 3 Jahre.
 
-## 4. Realisierung des ETL-Systems mittels ADSE (ca. 11–13 Seiten)
+## 4. Realisierung des ETL-Systems mittels ADSE (ca. 13–15 Seiten)
 *Ziel: Detaillierte Beschreibung der technischen Umsetzung und empirische Analyse der ADSE-Potenziale.*
 
 * **4.1 Architekturentwurf und Tech-Stack-Evaluation:**
@@ -50,7 +50,11 @@
     * Frontend: Blazor Server UI – welche Komponenten wurden vollständig generiert, wo war manueller Eingriff nötig?
     * Backend: `ConnectionService` und Konfigurationsmanagement – KI-gestützte Architekturentscheidungen und deren Bewertung.
     * Schnittstelle: Parameterübergabe und Log-Parsing – Grenzerfahrungen bei komplexer Interop-Logik.
-* **4.3 Empirische Analyse der ADSE-Potenziale:**
+* **4.3 CI/CD-Pipeline als Qualitätssicherungsebene im ADSE-Prozess:**
+    * Begründung: Automatisierte Pipelines als notwendige Voraussetzung für sicheres ADSE – Regression durch KI-generierte Änderungen muss zuverlässig abgefangen werden.
+    * Implementierung der GitHub Actions Workflows: Build-, Test- und Deployment-Stages für .NET und Python.
+    * Integration in den ADSE-Workflow: Feedback-Loop zwischen KI-Agent, Commit und Pipeline-Ergebnis als Korrektivmechanismus.
+* **4.4 Empirische Analyse der ADSE-Potenziale:**
     * Erhebungsmethodik: Zeiterfassung (Menschliche Arbeitszeit vs. KI-Interaktionszeit), Auswertung von Git-Commit-Häufigkeit und Prompt-Logs.
     * Produktivitätspotenziale: Generierung von Boilerplate-Code, Architekturvorschläge, Dokumentation.
     * Qualitätspotenziale: Code-Review durch KI, konsistente Namensgebung, automatisierte Testfälle.
