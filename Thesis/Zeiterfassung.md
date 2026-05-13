@@ -49,8 +49,9 @@
 
 | # | Datum | Phase | Bereich | Tätigkeit | Gesamt (h) | KI-Zeit (h) | Eigen-Zeit (h) | Notizen / Erkenntnisse |
 |---|-------|-------|---------|-----------|:----------:|:-----------:|:--------------:|------------------------|
-| 1 | 12.05.2026 | UM | DOK | Initialisierung Dokumentation.md (Struktur, Frontmatter, Abschnitte 1–7) | 0:08:03 | 0:00:03 | 0:08:00 | |
-| 2 | tt.mm.jjjj | PL | ARCH | | | | | |
+| 1 | 12.05.2026 | UM | DOK | Initialisierung Dokumentation.md (Struktur, Frontmatter, Abschnitte 1–7) | 0:08:03 | 0:00:03 | 0:08:00 | Prompt → Abschnitt „Notizen" |
+| 2 | 13.05.2026 | PL | ARCH | Initialisierung Projekt (Blazor-Vorlage, Projektstruktur, Git-Setup) | 0:10:00 | – | 0:10:00 | |
+| 3 | 13.05.2026 | PL | SOP | Erstellung & Strukturierung User Stories: initiale Stories, Erweiterung um Transformationen/Audit/Pipeline/Import-Export, Umstrukturierung in 4 Feature-Gruppen (~30 Stories gesamt) | 0:15:02 | 0:00:02 | 0:15:00 | Prompt → Abschnitt „Notizen" |
 
 **Monatsübersicht Mai 2026**
 
@@ -153,6 +154,47 @@
 | **CAPEX Eigenentwicklung (Gesamt)** | | |
 | davon KI-Kosten (API-/Tool-Gebühren) | _(tatsächliche Ausgaben)_ | |
 | davon menschliche Eigenleistung | | |
+
+---
+
+## Notizen
+
+### Eintrag #1 – Initialisierung Dokumentation.md: verwendeter Prompt
+
+> Kompakter Prompt, der das Dokument `Thesis/Dokumentation.md` reproduzieren kann.
+
+```
+Erstelle eine technische Dokumentation (Markdown, YAML-Frontmatter) für ein ETL-Tool
+namens „Snowbridge": Blazor Server (.NET 10) als Frontend/Backend, Python als ETL-Worker,
+Snowflake als Ziel-DWH, MariaDB für Identity. Architekturmuster: C# orchestriert,
+Python verarbeitet (Prozess-Isolation via Process.Start). Abschnitte 1–7: Überblick
+(Systemtabelle, Architekturdiagramm ASCII, MVP-Feature-Liste), Architektur & Tech-Stack,
+Frontend, Backend, Python ETL, Datenbankanbindung, Deployment. Noch nicht implementierte
+Abschnitte mit Platzhaltertext kennzeichnen. Sprache: Deutsch.
+```
+
+---
+
+### Eintrag #3 – User Stories: verwendeter Prompt
+
+> Kompakter Prompt, der das Dokument `Planning/UserStories.md` reproduzieren kann.
+
+```
+Erstelle eine strukturierte User-Stories-Datei (Markdown) für ein Blazor Server
+ETL-Workflow-Tool mit ASP.NET Core Identity und Passkey-Authentifizierung.
+Gliedere in 4 Feature-Gruppen:
+  1. Benutzerverwaltung & Sicherheit – Auth (Passkey, kein Passwort-Reset), Rollen,
+     Berechtigungen (rollenbasierte Sichtbarkeit), Audit-Log
+  2. ETL-Kernfunktionen – Datenquellen (Extract), Transformationen mit Dry-Run
+     (Transform), Datenziel (Load), ETL-Jobs (CRUD, Echtzeit-Fortschritt),
+     Datenpipeline & Abhängigkeiten
+  3. Betrieb & Monitoring – Scheduling (Cron), Logs & Benachrichtigungen,
+     Fehlerbehandlung inkl. Retry-Strategie
+  4. Oberfläche & Bedienung – Navigation & Dashboard, Import/Export von
+     Job-Konfigurationen
+Sprache: Deutsch. Format je Story: „Als [Rolle] möchte ich … können."
+Rollen: Benutzer, Admin.
+```
 
 ---
 
