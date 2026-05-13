@@ -40,12 +40,39 @@
 
 ---
 
-## Noch einzuordnen
+## Kap. 3.1 – Methodik (Design Science Research)
 
 | # | Typ | Autor(en) | Titel | Jahr | Quelle / URL | Abgerufen am |
 |---|-----|-----------|-------|------|--------------|--------------|
 | 13 | Paper | Hevner, A. R.; March, S. T.; Park, J.; Ram, S. | Design Science in Information Systems Research | 2004 | MIS Quarterly, 28(1), S. 75–106 – https://aisel.aisnet.org/misq/vol28/iss1/6/ | 12.05.2026 |
-| 14 | Preprint | Peng et al. | The Impact of AI on Developer Productivity: Evidence from GitHub Copilot | 2023 | https://arxiv.org/abs/2302.06590 | 12.05.2026 |
-| 15 | Online | GitHub, Inc. (Ziegler et al.) | Research: Quantifying GitHub Copilot's Impact on Developer Productivity and Happiness | 2022 | https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/ | 12.05.2026 |
-| 16 | Preprint | METR | Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity | 2025 | https://arxiv.org/abs/2507.09089 | 12.05.2026 |
-| 17 | Umfrage | Stack Overflow | Developer Survey 2025 – AI Section | 2025 | https://survey.stackoverflow.co/2025/ai/ | 12.05.2026 |
+| 14 | Paper | Peffers, K.; Tuunanen, T.; Rothenberger, M. A.; Chatterjee, S. | A Design Science Research Methodology for Information Systems Research | 2007 | Journal of Management Information Systems, 24(3), S. 45–77 – https://www.tandfonline.com/doi/abs/10.2753/MIS0742-1222240302 | 12.05.2026 |
+
+---
+
+## Kap. 3.2 – Snowbridge (Technische Primärquellen)
+
+| # | Typ | Autor(en) | Titel | Jahr | Quelle / URL | Abgerufen am |
+|---|-----|-----------|-------|------|--------------|--------------|
+| 15 | Doku | Microsoft | ASP.NET Core Blazor – Offizielle Dokumentation | 2024 | https://learn.microsoft.com/de-de/aspnet/core/blazor/ | 12.05.2026 |
+| 16 | Doku | Microsoft | .NET 10 – Offizielle Dokumentation | 2024 | https://learn.microsoft.com/de-de/dotnet/ | 12.05.2026 |
+| 17 | Doku | Snowflake, Inc. | Snowflake Connector for Python – Offizielle Dokumentation | 2024 | https://docs.snowflake.com/en/developer-guide/python-connector/python-connector | 12.05.2026 |
+
+---
+
+## Kap. 3.3 – Referenz-Szenario / Benchmark
+
+| # | Typ | Autor(en) | Titel | Jahr | Quelle / URL | Abgerufen am |
+|---|-----|-----------|-------|------|--------------|--------------|
+| 18 | Doku | Fivetran, Inc. | Fivetran Pricing | 2026 | https://www.fivetran.com/pricing | 12.05.2026 |
+| 19 | Doku | Airbyte, Inc. | Airbyte Pricing | 2026 | https://airbyte.com/pricing | 12.05.2026 |
+
+---
+
+## Noch einzuordnen
+
+| # | Typ | Autor(en) | Titel | Jahr | Quelle / URL | Abgerufen am |
+|---|-----|-----------|-------|------|--------------|--------------|
+| 20 | Preprint | Peng et al. | The Impact of AI on Developer Productivity: Evidence from GitHub Copilot | 2023 | https://arxiv.org/abs/2302.06590 | 12.05.2026 |
+| 21 | Online | GitHub, Inc. (Ziegler et al.) | Research: Quantifying GitHub Copilot's Impact on Developer Productivity and Happiness | 2022 | https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/ | 12.05.2026 |
+| 22 | Preprint | METR | Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity | 2025 | https://arxiv.org/abs/2507.09089 | 12.05.2026 |
+| 23 | Umfrage | Stack Overflow | Developer Survey 2025 – AI Section | 2025 | https://survey.stackoverflow.co/2025/ai/ | 12.05.2026 |
