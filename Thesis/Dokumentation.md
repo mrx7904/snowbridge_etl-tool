@@ -20,10 +20,11 @@ Das Tool ist auf die Anbindung von **Snowflake** als Cloud-Data-Warehouse ausger
 
 | Komponente       | Technologie              | Version    | Beschreibung                              |
 |------------------|--------------------------|------------|-------------------------------------------|
-| Frontend & Backend | Blazor Server (.NET)   | .NET 10 LTS | UI und Anwendungslogik (C#)             |
+| Frontend & Backend | Blazor Server (.NET)  + Maria DB  | .NET 10 LTS| UI und Anwendungslogik (C#)              |
 | ETL-Workflows    | Python                   | 3.10+      | Datenverarbeitung und DB-Verbindungen     |
 | Ziel-DWH         | Snowflake                | –          | Cloud-Data-Warehouse                      |
 | Konfiguration    | JSON / .env              | –          | Verbindungsparameter, Secrets             |
+
 
 ### 1.2 Architekturmuster: C# als Command Center, Python als Worker
 
