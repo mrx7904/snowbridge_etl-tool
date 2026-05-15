@@ -8,3 +8,5 @@ obj/
 
 # User-specific VS settings
 *.csproj.user
+
+*.csproj.lscache

@@ -52,6 +52,7 @@
 | 1 | 12.05.2026 | UM | DOK | Initialisierung Dokumentation.md (Struktur, Frontmatter, Abschnitte 1–7) | 0:08:03 | 0:00:03 | 0:08:00 | Prompt → Abschnitt „Notizen" |
 | 2 | 13.05.2026 | PL | ARCH | Initialisierung Projekt (Blazor-Vorlage, Projektstruktur, Git-Setup) | 0:10:00 | – | 0:10:00 | |
 | 3 | 13.05.2026 | PL | SOP | Erstellung & Strukturierung User Stories: initiale Stories, Erweiterung um Transformationen/Audit/Pipeline/Import-Export, Umstrukturierung in 4 Feature-Gruppen (~30 Stories gesamt) | 0:15:02 | 0:00:02 | 0:15:00 | Prompt → Abschnitt „Notizen" |
+| 4 | 15.05.2026 | PL | SOP | User Stories aus `UserStories.md` in GitHub-Issues umgewandelt, `Planning/Issues.md` erstellt (14 Issues, 4 Feature-Gruppen, ~38 User Stories) | 0:17:28 | 0:00:28 | 0:17:00 | Prompt → Abschnitt „Notizen"; erster Durchlauf unvollständig (nur 2 Issues – veralteter Dateistand), nach Korrektur alle 14 Issues generiert |
 
 **Monatsübersicht Mai 2026**
 
@@ -194,6 +195,41 @@ Gliedere in 4 Feature-Gruppen:
      Job-Konfigurationen
 Sprache: Deutsch. Format je Story: „Als [Rolle] möchte ich … können."
 Rollen: Benutzer, Admin.
+```
+
+---
+
+### Eintrag #4 – User Stories → GitHub Issues: verwendeter Prompt
+
+> Prompt zur Umwandlung von `Planning/UserStories.md` in `Planning/Issues.md`.
+
+```
+Lies die Datei Planning/UserStories.md aus dem Projektordner.
+Wandle jede User Story in ein GitHub Issue um und speichere alle Issues in einer
+neuen Datei Planning/Issues.md.
+
+Format pro Issue:
+## Issue #[Nummer]: [Kurzer, aktionsbasierter Titel]
+**Labels:** `[z.B. feature, backend, frontend, auth]`
+**Milestone:** `MVP`
+**Priorität:** `[High / Medium / Low]`
+
+### User Story
+[Originaltext der User Story]
+
+### Beschreibung
+[2–3 Sätze technischer Kontext]
+
+### Akzeptanzkriterien
+- [ ] [Messbares Kriterium 1]
+- [ ] [Messbares Kriterium 2]
+- [ ] [Messbares Kriterium 3]
+
+### Technische Hinweise
+[Betroffene Komponenten, Architekturentscheidungen]
+
+Leite Labels aus dem Kontext ab. Vergib Prioritäten anhand der MVP-Abhängigkeiten.
+Nummeriere die Issues fortlaufend ab #1.
 ```
 
 ---
