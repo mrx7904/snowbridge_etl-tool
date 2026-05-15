@@ -26,6 +26,7 @@
 
 - Als Admin möchte ich ein Audit-Log einsehen können, das protokolliert, wer wann welchen Job erstellt, geändert oder gestartet hat.
 - Als Admin möchte ich Audit-Einträge filtern und exportieren können (z. B. für Compliance-Nachweise).
+- (Zertifikat und Datenschutz)
 
 ---
 
