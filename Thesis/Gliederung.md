@@ -12,13 +12,15 @@
 * **1.1 Motivation:** ADSE als neues Paradigma – Chancen für die kosteneffiziente Realisierung individueller Datenpipelines.
 * **1.2 Problemstellung:** Fehlende empirische Erkenntnisse zu Potenzialen und Grenzen von ADSE im Kontext von ETL-Systemen.
 * **1.3 Zielsetzung und Forschungsfrage:** Welche Potenziale bietet ADSE bei der Entwicklung von ETL-Werkzeugen, und wie verhält sich der Kosten-Nutzen-Saldo im Vergleich zu Standardsoftware?
-* **1.4 Aufbau der Arbeit:** Kurzer Überblick über die Struktur.
+* **1.4 Abgrenzung der Arbeit:** Explizite Benennung des Untersuchungsrahmens – was wird bewusst nicht untersucht (z.B. Skalierbarkeit für sehr große Datenmengen, Multi-Developer-Szenarien, andere Cloud-DWH-Systeme als Snowflake).
+* **1.5 Aufbau der Arbeit:** Kurzer Überblick über die Struktur.
 
 ## 2. Theoretische Grundlagen und Stand der Technik (ca. 7–9 Seiten)
 *Ziel: Notwendiges Begriffsverständnis schaffen, ohne unnötige Breite.*
 
 * **2.1 Agent-Driven Software Engineering (ADSE):**
     * Paradigmenwechsel: Vom Coding zur Orchestrierung von KI-Agenten.
+    * Empirischer Forschungsstand: Bestehende Produktivitätsstudien und deren Befunde (Peng et al. 2023, Ziegler et al. 2022, METR 2025).
     * Potenziale: Produktivitätssteigerung, Zugänglichkeit, Time-to-Market.
     * Aktuelle Grenzen: Halluzinationen, Kontextgrenzen, Qualitätssicherung.
 * **2.2 ETL-Architekturen und der Modern Data Stack:**
@@ -31,7 +33,10 @@
 ## 3. Konzeption der Fallstudie (ca. 5–6 Seiten)
 *Ziel: Definition des Untersuchungsrahmens, des Artefakts und des Vergleichsmaßstabs.*
 
-* **3.1 Methodik:** Design Science Research (DSR) Ansatz (Fokus auf Artefakt und Evaluation).
+* **3.1 Forschungsdesign und Methodik:**
+    * Design Science Research (DSR) als übergeordneter Forschungsrahmen (Fokus auf Artefakt und Evaluation).
+    * Erhebungsinstrumente: Zeiterfassung (KI-Zeit vs. Eigen-Zeit), Prompt-Logs, Git-Commit-Analyse – methodische Abgrenzung und Aufbau.
+    * Grenzen der Erhebungsmethodik: Subjektivität der Zeitmessung, Einzelfallstudie, fehlende Kontrollgruppe.
 * **3.2 Vorstellung des Untersuchungsobjekts: ETL-Werkzeug „Snowbridge":**
     * Einordnung als repräsentatives Beispiel für domänenspezifische ETL-Eigenentwicklungen.
     * Anforderungsanalyse (Minimum Viable Feature Set): Scheduling, Logging, Data Preview, Snowflake-Anbindung.
